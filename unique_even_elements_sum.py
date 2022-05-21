@@ -1,12 +1,12 @@
-N=int(input())
-s=0
-k=list(map(int,input().split()))
-t=[]
-for i in k:
-    if i not in t:
-        t.append(i)
-        
-for j in range(len(t)):
-    if t[j]%2==0:
-        s=s+t[j]
-print(s)
+n=int(input())
+t=list(map(int,input().split()))
+h=[]
+k=[]
+for i in range(len(t)):
+    if t[i]%2==0:
+        h.append(t[i])
+for j in h:
+    if j not in k:
+        k.append(j)
+g=sum(k)
+print(g)
