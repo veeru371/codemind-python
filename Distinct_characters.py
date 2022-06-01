@@ -1,11 +1,9 @@
-g=input()
-n=g.lower()
-c=0
-u=[]
-b=[]
-for i in n:
+n=input()
+t=[]
+g=n.lower()
+for i in g:
     if i!=" ":
-        if(n.count(i)==1):
-            b.append(i)
-t=sorted(b)
-print(''.join(t))
+        if i not in t:
+            t.append(i)
+y=sorted(t)
+print(''.join(y))
